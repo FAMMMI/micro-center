@@ -14,7 +14,7 @@ const Laptops = () => {
     }, []);
 
     const handleAddToCart = (laptop) => {
-        console.log(laptop);
+        // console.log(laptop);
         const newCart = [...cart, laptop];
         setCart(newCart);
     }
@@ -33,7 +33,23 @@ const Laptops = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <h3 className='cart-header'>Order Summary</h3>
+                {
+
+                    cart.map(laptop =>
+                        <Cart
+                            key={laptop.id}
+                            cart={laptop}
+                        ></Cart>)
+                }
+                <div className='cart-btn'>
+                    <button>
+                        <p className='cart-btn-text '>Choose one for me</p>
+                    </button>
+                    <button>
+                        <p className='cart-btn-text'>Clear All</p>
+                    </button>
+                </div>
             </div>
         </div>
     );
