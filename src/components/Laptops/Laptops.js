@@ -7,6 +7,7 @@ const Laptops = () => {
 
     const [laptops, setLaptops] = useState([]);
     const [cart, setCart] = useState([]);
+    const [item, setItem] = useState([]);
     useEffect(() => {
         fetch("products.json")
             .then(res => res.json())
@@ -18,6 +19,21 @@ const Laptops = () => {
         const newCart = [...cart, laptop];
         setCart(newCart);
     }
+
+    const handleChoose = (laptop) => {
+        console.log(laptop)
+        const newItem = [...item, laptop];
+        setItem(newItem);
+    }
+
+    /* const handleChoose = (laptop) => {
+        console.log()
+        let idString = laptop.id;
+        let id = +idString;
+        const value = Math.floor(Math.random(id) * 11)
+        return value;
+
+    } */
 
     return (
         <div className='shop'>
@@ -40,13 +56,14 @@ const Laptops = () => {
                         <Cart
                             key={laptop.id}
                             cart={laptop}
+                        // handleChoose={handleChoose}
                         ></Cart>)
                 }
                 <div className='cart-btn'>
-                    <button>
+                    <button onClick={handleChoose}>
                         <p className='cart-btn-text '>Choose one for me</p>
                     </button>
-                    <button>
+                    <button >
                         <p className='cart-btn-text'>Clear All</p>
                     </button>
                 </div>

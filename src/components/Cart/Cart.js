@@ -2,7 +2,6 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = ({ cart }) => {
-    console.log(cart.name);
     const { name, img } = cart
 
     return (
@@ -12,5 +11,6 @@ const Cart = ({ cart }) => {
         </div>
     );
 };
+
 
 export default Cart;
