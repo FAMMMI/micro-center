@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "name": "Acer Aspire 5 laptop",
+        "price": 120000,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-5/aspire-5-001-500x500.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Asus Vivobook 14",
+        "price": 56000,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-14/vivobook-14-4-500x500.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Asus Vivobook 15",
+        "price": 60000,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15/vivobook-15-04-500x500.jpg"
+    },
+    {
+        "id": "4",
+        "name": "HP Pavilion laptop 15",
+        "price": 75000,
+        "img": "https://sg-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/f/e/felicette_15_fogblue_cloudblue_nt_hdcam_nonodd_fpr_win10_coreset_front_1_1.png"
+    },
+    {
+        "id": "5",
+        "name": "Lenovo IdeaPad Slim 3i",
+        "price": 45000,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Lenovo V14 Core i3 11th Gen",
+        "price": 54500,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/v14/v14-101-500x500.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Asus ROG Strix G15 G513IE ",
+        "price": 115000,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/rog-strix-g15-g513ie/rog-strix-g15-g513ie-01-500x500.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Asus ROG Strix GL504GM-ES158T",
+        "price": 150000,
+        "img": "https://www.notebookcheck.net/uploads/tx_nbc2/csm_GL504_Hero_Cam05Lighting_v1_740f45a0ab_04.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Acer Aspire 3 A315-58 ",
+        "price": 58000,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-3-a315-58/aspire-3-a315-58-001-500x500.jpg"
+    },
+    {
+        "id": "10",
+        "name": "HP 14s-dq2775TU Core i7 11th Gen ",
+        "price": 76000,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/14s-dq2775tu/14s-dq2775tu-001-500x500.jpg"
+    }
+]
