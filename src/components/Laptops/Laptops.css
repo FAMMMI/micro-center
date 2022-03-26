@@ -16,7 +16,16 @@
 @media screen and (max-width:480px) {
     .laptops-container{
         grid-template-columns: repeat(1, 1fr);
+        order: 2;
     }
+    .cart-container{
+        order: 1;
+        width: 100%;
+    }
+    .shop{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+
 }
 .cart-container{
    

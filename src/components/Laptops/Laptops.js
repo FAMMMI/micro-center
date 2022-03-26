@@ -8,43 +8,48 @@ const Laptops = () => {
 
     const [laptops, setLaptops] = useState([]);
     const [cart, setCart] = useState([]);
-    const [items, setItems] = useState([]);
+    const [randomitem, setRandomItems] = useState([]);
+
+
     useEffect(() => {
         fetch("products.json")
             .then(res => res.json())
             .then(data => setLaptops(data));
     }, []);
 
+
     const handleAddToCart = (laptop) => {
-        console.log(laptop);
-        const newCart = [...cart, laptop];
-        setCart(newCart);
+        let newCart = [];
+        const exists = cart.find(product => product.id === laptop.id)
+        if (!exists) {
+            console.log(laptop);
+            newCart = [...cart, laptop];
+            setCart(newCart);
+        }
+        else {
+            return;
+        }
     }
 
-    const handleChoose = (laptop) => {
-        let idString = laptop.id;
-        let id = +idString;
-        const value = Math.floor(Math.random(id) * 11);
-        return value;
+    const randomItem = (newCart) => {
+        const NewItem = newCart[Math.floor(Math.random() * newCart.length)];
+        let arr = [];
+        arr.push(NewItem);
+        setRandomItems(arr);
     }
 
 
     const handleReset = () => {
         const newCart = [];
+        setRandomItems(newCart);
         setCart(newCart);
     }
-    /* const handleChoose = (laptop) => {
-        console.log()
-        let idString = laptop.id;
-        let id = +idString;
-        const value = Math.floor(Math.random(id) * 11)
-        return value;
 
-    } */
+
 
     return (
-        <div className='shop'>
-            <div className='laptops-container'>
+        <div className='shop ' >
+            <div className='laptops-container '>
                 {
                     laptops.map(laptop =>
                         <Laptop
@@ -55,7 +60,7 @@ const Laptops = () => {
                     )
                 }
             </div>
-            <div className='cart-container'>
+            <div className='cart-container '>
                 <h3 className='cart-header'>Order Summary</h3>
                 {
 
@@ -67,7 +72,7 @@ const Laptops = () => {
                 }
                 <div>
                     <div className='cart-btn'>
-                        <button onClick={() => handleChoose}>
+                        <button onClick={() => randomItem(cart)}>
                             <p className='cart-btn-text '>Choose one for me</p>
                         </button>
                         <button onClick={handleReset}>
@@ -75,6 +80,9 @@ const Laptops = () => {
                         </button>
                     </div>
                 </div>
+                <RandomProduct
+                    randomitem={randomitem}
+                ></RandomProduct>
 
             </div>
         </div>
