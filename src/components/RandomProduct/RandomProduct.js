@@ -2,7 +2,7 @@ import React from 'react';
 import './Randomproduct.css'
 
 const RandomProduct = (props) => {
-    console.log(props)
+
 
     if (props.randomItems[0] !== undefined) {
 
@@ -12,7 +12,7 @@ const RandomProduct = (props) => {
             <div className='Random-Item'>
                 <img src={img} alt="" width="200px" />
                 <h5>{name}</h5>
-                <h5>Price: {price}</h5>
+                <h5>Price: ${price}</h5>
             </div>
         );
     }
