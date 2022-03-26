@@ -1,4 +1,4 @@
-# My-cro Center
+# My-Cro Center
 
 Live site link : [https://my-cro-center-by-fami.netlify.app/](https://my-cro-center-by-fami.netlify.app/).
 
