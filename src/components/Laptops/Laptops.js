@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Laptop from '../Laptop/Laptop';
+import RandomProduct from '../RandomProduct/RandomProduct';
 import "./Laptops.css"
 
 const Laptops = () => {
 
     const [laptops, setLaptops] = useState([]);
     const [cart, setCart] = useState([]);
-    const [item, setItem] = useState([]);
+    const [items, setItems] = useState([]);
     useEffect(() => {
         fetch("products.json")
             .then(res => res.json())
@@ -15,17 +16,23 @@ const Laptops = () => {
     }, []);
 
     const handleAddToCart = (laptop) => {
-        // console.log(laptop);
+        console.log(laptop);
         const newCart = [...cart, laptop];
         setCart(newCart);
     }
 
     const handleChoose = (laptop) => {
-        console.log(laptop)
-        const newItem = [...item, laptop];
-        setItem(newItem);
+        let idString = laptop.id;
+        let id = +idString;
+        const value = Math.floor(Math.random(id) * 11);
+        return value;
     }
 
+
+    const handleReset = () => {
+        const newCart = [];
+        setCart(newCart);
+    }
     /* const handleChoose = (laptop) => {
         console.log()
         let idString = laptop.id;
@@ -56,17 +63,19 @@ const Laptops = () => {
                         <Cart
                             key={laptop.id}
                             cart={laptop}
-                        // handleChoose={handleChoose}
                         ></Cart>)
                 }
-                <div className='cart-btn'>
-                    <button onClick={handleChoose}>
-                        <p className='cart-btn-text '>Choose one for me</p>
-                    </button>
-                    <button >
-                        <p className='cart-btn-text'>Clear All</p>
-                    </button>
+                <div>
+                    <div className='cart-btn'>
+                        <button onClick={() => handleChoose}>
+                            <p className='cart-btn-text '>Choose one for me</p>
+                        </button>
+                        <button onClick={handleReset}>
+                            <p className='cart-btn-text'>Clear All</p>
+                        </button>
+                    </div>
                 </div>
+
             </div>
         </div>
     );
