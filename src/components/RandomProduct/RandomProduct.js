@@ -4,9 +4,9 @@ import './Randomproduct.css'
 const RandomProduct = (props) => {
     console.log(props)
 
-    if (props.randomitem[0] !== undefined) {
+    if (props.randomItems[0] !== undefined) {
 
-        const { name, img, price } = props.randomitem[0];
+        const { name, img, price } = props.randomItems[0];
         console.log(name);
         return (
             <div className='Random-Item'>

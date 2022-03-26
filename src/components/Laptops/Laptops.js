@@ -8,7 +8,7 @@ const Laptops = () => {
 
     const [laptops, setLaptops] = useState([]);
     const [cart, setCart] = useState([]);
-    const [randomitem, setRandomItems] = useState([]);
+    const [randomItems, setRandomItems] = useState([]);
 
 
     useEffect(() => {
@@ -81,7 +81,7 @@ const Laptops = () => {
                     </div>
                 </div>
                 <RandomProduct
-                    randomitem={randomitem}
+                    randomItems={randomItems}
                 ></RandomProduct>
 
             </div>
