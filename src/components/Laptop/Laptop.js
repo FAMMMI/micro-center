@@ -12,7 +12,7 @@ const Laptop = ({ laptop, handleAddToCart }) => {
             <img src={img} alt="" />
             <div className='laptop-info'>
                 <h4 className='laptop-name'>Name: {name}</h4>
-                <h5>Price: {price}</h5>
+                <h5>Price: ${price}</h5>
             </div>
             <button onClick={() => handleAddToCart(laptop)}
                 className='btn-cart'>
