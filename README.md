@@ -1,6 +1,6 @@
 # My-cro Center
 
-Live site link : [My-Cro Center](https://my-cro-center-by-fami.netlify.app/).
+Live site link : [https://my-cro-center-by-fami.netlify.app/](https://my-cro-center-by-fami.netlify.app/).
 
 ## Available Scripts
 
