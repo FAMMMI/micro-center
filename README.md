@@ -1,6 +1,6 @@
 # My-cro Center
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site link : [My-Cro Center](https://my-cro-center-by-fami.netlify.app/).
 
 ## Available Scripts
 
