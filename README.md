@@ -2,6 +2,18 @@
 Website: [My-Cro Center](https://my-cro-center-by-fami.netlify.app/)        
 Live site link : [https://my-cro-center-by-fami.netlify.app/](https://my-cro-center-by-fami.netlify.app/)
 
+## Website Description 
+
+ * Users can select any product to purchase .
+ * Ui can recommend any one from the selected products of the  user.
+ * Users can remove all products from  cart .
+
+## Technology used
+ *  Bootstrap 
+ * React Bootstrap
+ * React Router 
+
+
 ## Available Scripts
 
 In the project directory, you can run:
